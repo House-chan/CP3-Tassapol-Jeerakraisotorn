@@ -13,8 +13,7 @@ while True:
         total += price
 for x in range(len(menulist)):
     print(menulist[x],":",pricelist[x])
-print(x,":",menu[x])
-print(total)
+
 print(total)
 
 
@@ -22,11 +21,13 @@ print(total)
 total = 0
 menu = {}
 while True:
-menuname = input("enter menu name:").capitalize()
-if menuname == "Exit":
-break
-else:
-price = int(input("Price:"))
-menu[menuname] = price
-total += price
+    menuname = input("enter menu name:").capitalize()
+    if menuname == "Exit":
+        break
+    else:
+        price = int(input("Price:"))
+        menu[menuname] = price
+        total += price
 for x in menu.keys():
+print(x,":",menu[x])
+print(total)
